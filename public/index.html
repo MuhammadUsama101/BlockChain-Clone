@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body class="overflow-x-hidden">
     <!-- NavBar -->
     <div class="flex lg:justify-around justify-between text-white w-[100%] bg-darkBlue  h-[6rem] border-b-[1px] border-slate-300 lg:px-0 px-3 border-opacity-20">
         <!-- left side -->
@@ -52,7 +52,7 @@
             </div>
         </div>
         <!-- Buy ,trade -->
-        <div class=" min-h-[13rem] lg:translate-y-[-10rem] md:translate-y-[-15rem] translate-y-[-18rem] w-[100%] overflow-x-auto">
+        <div class=" flex items-center min-h-[13rem] lg:translate-y-[-10rem] md:translate-y-[-15rem] translate-y-[-18rem] w-[100%] overflow-x-auto">
             <div class=" lg:w-[100%] w-[85rem] flex lg:justify-between justify-start gap-7 lg:gap-6 lg:flex-wrap min-h-[10rem]">
                 <!-- boxes -->
                 <div class="h-[10rem]  lg:w-[17rem] w-[20rem] bg-white flex items-center justify-center flex-col gap-3 rounded-lg shadow-xl ">
@@ -114,41 +114,131 @@
                
             </div>
         </div>
-        <!-- wallet -->
-        <div class="bg-gray-500 bg-opacity-5 h-[47rem] rounded-2xl relative">
-            <img class="absolute top-52 right-0 w-[35rem] -z-10" src="/Images/homepage-app-shapes-bg@2x.png" alt="">
-            <h2 class="text-purple-600 font-semibold text-5xl ">The only crypto wallet <br> you’ll ever need</h2>
-            <div class="flex lg:flex-row flex-col w-[100%] h-[80%]">
-                <!-- left -->
-                <div class="flex flex-col justify-center text-purple-600 text-2xl lg:w-[50%] w-[0rem] h-[100%] lg:visible invisible ">
-                    <div class="flex flex-col gap-4">
-                        <div class="gra border-2 border-gray-400 border-opacity-20 rounded-lg w-[100%] min-h-[4rem]">
-                            Buy, sell, and swap with ease <br>
-    Use a card or bank account to buy BTC, ETH, stablecoins, and other assets.
+        <!-- images div -->
+        <div class="m-h-[10rem] lg:translate-y-0 md:translate-y-[-7rem] translate-y-[-15rem]">
+            <!-- wallet -->
+            <div class="bg-gray-500 p-7 bg-opacity-5 min-h-[47rem] rounded-2xl relative flex  justify-center flex-col">
+                <img class="absolute top-52 right-0 w-[35rem] -z-10" src="/Images/homepage-app-shapes-bg@2x.png" alt="">
+                <h2 class="text-purple-600 font-semibold lg:text-5xl text-3xl mb-10">The only crypto wallet  you’ll ever need</h2>
+                <div class="flex lg:flex-row flex-col items-center  w-[100%] h-[80%]">
+                    <!-- left -->
+                    <div class="flex flex-col justify-center text-purple-600 text-2xl lg:w-[50%] w-[0rem] h-[100%] lg:visible invisible absolute lg:relative">
+                        <div class="flex flex-col gap-4">
+                            <div class="gra border-2 border-gray-400 border-opacity-20 rounded-lg w-[100%] min-h-[4rem]">
+                                Buy, sell, and swap with ease <br>
+        Use a card or bank account to buy BTC, ETH, stablecoins, and other assets.
+                            </div>
+                            <div class="gra border-2 border-gray-400 border-opacity-20 rounded-lg w-[100%] min-h-[4rem]">
+                                Earn rewards on your crypto
+                            </div>
+                            <div class="gra border-2 border-gray-400 border-opacity-20 rounded-lg w-[100%] min-h-[4rem]">
+                                Self-custody your crypto
+                            </div>
+                            <div class="gra border-2 border-gray-400 border-opacity-20 rounded-lg w-[100%] min-h-[4rem]">
+                                Connect to DeFi
+                            </div>
                         </div>
-                        <div class="gra border-2 border-gray-400 border-opacity-20 rounded-lg w-[100%] min-h-[4rem]">
-                            Earn rewards on your crypto
-                        </div>
-                        <div class="gra border-2 border-gray-400 border-opacity-20 rounded-lg w-[100%] min-h-[4rem]">
-                            Self-custody your crypto
-                        </div>
-                        <div class="gra border-2 border-gray-400 border-opacity-20 rounded-lg w-[100%] min-h-[4rem]">
-                            Connect to DeFi
-                        </div>
+                        
                     </div>
-                    <button class=" mt-[2.5rem] w-[10rem] h-[4rem] bg-purple-600 rounded-lg text-white">Get started</button>
+                    
+                    <!-- top -->
+                    <div class="w-[20rem] lg:w-[0rem] h-[100%] lg:invisible visible">
+                        <img class="w-[100%]" src="/Images/app-ease@2x.png" alt="">
+                    </div>
+                    <!-- bottom -->
+                    <div class="text-purple-600  text-2xl w-[100%] lg:w-[0rem] h-[100%] lg:invisible visible lg:absolute relative ">
+                        <button class="w-[4rem] h-[4rem] rounded-lg opacity-80 border-2 border-purple-600"><i class="fa-solid fa-arrow-left"></i></button>
+                        <button class="w-[4rem] h-[4rem] rounded-lg opacity-80 border-2 border-purple-600"><i class="fa-solid fa-arrow-right"></i></button>
+                        <p class="font-semibold my-3">But sell and swap with ease</p>
+                        <p>Use a card or bank account to but BTC ,ETH,stablecoins ,and other  assets.</p>
+                    </div>
                 </div>
-                
-                <!-- top -->
-                <div class="w-[100%] lg:w-[0rem] h-[100%] lg:invisible visible bg-red-700 ">
-                    <img src="/Images/" alt="">
-                </div>
-                <!-- bottom -->
-                <div class="w-[100%] lg:w-[0rem] h-[100%] lg:invisible visible bg-green-700 "></div>
+                <button class=" mt-[2.5rem] w-[10rem] h-[4rem] bg-purple-600 rounded-lg text-white">Get started</button>
             </div>
-
-
+            <!-- second -->
+            <div class="bg-gray-500 mt-[5vw] p-7 bg-opacity-5 min-h-[47rem] rounded-2xl relative flex  justify-center flex-col">
+                <img class="absolute top-52 left-0 w-[35rem] -z-10" src="/Images/homepage-exchange-shapes-bg@2x.png" alt="">
+                <h2 class="text-purple-600 font-semibold lg:text-5xl text-3xl mb-10">The only crypto wallet  you’ll ever need</h2>
+                <div class="flex lg:flex-row flex-col items-center justify-end  w-[100%] h-[80%]">
+                    <!-- left -->
+                    <div class="flex flex-col justify-center text-purple-600 text-2xl lg:w-[50%] w-[0rem] h-[100%] lg:visible invisible absolute lg:relative">
+                        <div class="flex flex-col gap-4">
+                            <div class="gra border-2 border-gray-400 border-opacity-20 rounded-lg w-[100%] min-h-[4rem]">
+                                Buy, sell, and swap with ease <br>
+        Use a card or bank account to buy BTC, ETH, stablecoins, and other assets.
+                            </div>
+                            <div class="gra border-2 border-gray-400 border-opacity-20 rounded-lg w-[100%] min-h-[4rem]">
+                                Earn rewards on your crypto
+                            </div>
+                            <div class="gra border-2 border-gray-400 border-opacity-20 rounded-lg w-[100%] min-h-[4rem]">
+                                Self-custody your crypto
+                            </div>
+                            <div class="gra border-2 border-gray-400 border-opacity-20 rounded-lg w-[100%] min-h-[4rem]">
+                                Connect to DeFi
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <!-- top -->
+                    <div class="w-[20rem] lg:w-[0rem] h-[100%] lg:invisible visible">
+                        <img class="w-[100%]" src="/Images/prod-exchange-fiat-currencies@2x.png" alt="">
+                    </div>
+                    <!-- bottom -->
+                    <div class="text-purple-600  text-2xl w-[100%] lg:w-[0rem] h-[100%] lg:invisible visible lg:absolute relative ">
+                        <button class="w-[4rem] h-[4rem] rounded-lg opacity-80 border-2 border-purple-600"><i class="fa-solid fa-arrow-left"></i></button>
+                        <button class="w-[4rem] h-[4rem] rounded-lg opacity-80 border-2 border-purple-600"><i class="fa-solid fa-arrow-right"></i></button>
+                        <p class="font-semibold my-3">But sell and swap with ease</p>
+                        <p>Use a card or bank account to but BTC ,ETH,stablecoins ,and other  assets.</p>
+                    </div>
+                </div>
+                <button class=" mt-[2.5rem] w-[10rem] h-[4rem] bg-purple-600 rounded-lg text-white">Get started</button>
+            </div>
+            <!-- third -->
+            <div class="bg-gray-500 mt-[5vw] p-7 bg-opacity-5 min-h-[47rem] rounded-2xl relative flex  justify-center flex-col">
+                <img class="absolute top-52 right-0 w-[35rem] -z-10" src="/Images/homepage-app-shapes-bg@2x.png" alt="">
+                <h2 class="text-purple-600 font-semibold lg:text-5xl text-3xl mb-10">The only crypto wallet  you’ll ever need</h2>
+                <div class="flex lg:flex-row flex-col items-center  w-[100%] h-[80%]">
+                    <!-- left -->
+                    <div class="flex flex-col justify-center text-purple-600 text-2xl lg:w-[50%] w-[0rem] h-[100%] lg:visible invisible absolute lg:relative">
+                        <div class="flex flex-col gap-4">
+                            <div class="gra border-2 border-gray-400 border-opacity-20 rounded-lg w-[100%] min-h-[4rem]">
+                                Buy, sell, and swap with ease <br>
+        Use a card or bank account to buy BTC, ETH, stablecoins, and other assets.
+                            </div>
+                            <div class="gra border-2 border-gray-400 border-opacity-20 rounded-lg w-[100%] min-h-[4rem]">
+                                Earn rewards on your crypto
+                            </div>
+                            <div class="gra border-2 border-gray-400 border-opacity-20 rounded-lg w-[100%] min-h-[4rem]">
+                                Self-custody your crypto
+                            </div>
+                            <div class="gra border-2 border-gray-400 border-opacity-20 rounded-lg w-[100%] min-h-[4rem]">
+                                Connect to DeFi
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <!-- top -->
+                    <div class="w-[20rem] lg:w-[0rem] h-[100%] lg:invisible visible">
+                        <img class="w-[100%]" src="/Images/app-ease@2x.png" alt="">
+                    </div>
+                    <!-- bottom -->
+                    <div class="text-purple-600  text-2xl w-[100%] lg:w-[0rem] h-[100%] lg:invisible visible lg:absolute relative ">
+                        <button class="w-[4rem] h-[4rem] rounded-lg opacity-80 border-2 border-purple-600"><i class="fa-solid fa-arrow-left"></i></button>
+                        <button class="w-[4rem] h-[4rem] rounded-lg opacity-80 border-2 border-purple-600"><i class="fa-solid fa-arrow-right"></i></button>
+                        <p class="font-semibold my-3">But sell and swap with ease</p>
+                        <p>Use a card or bank account to but BTC ,ETH,stablecoins ,and other  assets.</p>
+                    </div>
+                </div>
+                <button class=" mt-[2.5rem] w-[10rem] h-[4rem] bg-purple-600 rounded-lg text-white">Get started</button>
+            </div>
         </div>
+    </div>
+    <div class="flex md:flex-row flex-col justify-start md:items-center lg:justify-center p-10 gap-7 text-white bg-blue-950 h-[14rem] text-2xl overflow-hidden relative ">
+        <img src="/Images/banner-bg.svg" class="absolute w-[100%]" alt="">
+        <h2 class="z-10">Let us take you from zero to crypto</h2>
+        <button class="z-10 w-[10rem] h-[4rem] rounded-xl bg-white text-blue-600">Get started</button>
     </div>
 </body>
 </html>
